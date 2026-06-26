@@ -17,6 +17,6 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 RUN uv sync --locked
 
 # copy the script to the container. 1st name is source file, 2nd is destination
-COPY docker-workshop/pipeline/pipeline.py .
+COPY docker-workshop/pipeline/ingest_data.py .
 
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "ingest_data.py"]
