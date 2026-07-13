@@ -218,3 +218,13 @@ __marimo__/
 .streamlit/secrets.toml
 
 *.parquet
+
+#Terraform
+*.tfvars.json
+*.tfvars
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+!main.tf
+!variables.tf
